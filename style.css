@@ -1,1 +1,42 @@
-/**/
+ul {
+	text-decoration:none;
+	color:black;
+	font-family:Helvetica, sans serif;
+	list-style:none;
+	position:relative;
+	text-align:center;
+	line-height:50px;
+}
+
+ul ul {
+	position:absolute;
+	left:0;
+	top:50px;
+	overflow-x:hidden;
+}
+
+li {
+	width:200px;
+	height:50px;
+}
+
+ul li {
+	z-index:0;
+}
+
+ul ul li {
+	height:50px;
+	margin-top:-50px;
+	z-index:1;
+	background:yellow;
+	-webkit-transition: margin-top 0.3s, height 3s; /* For Safari 3.1 to 6.0 */
+	transition: margin-top 0.3s, height 3s;
+}
+
+ul li:hover li {
+	margin-top:0;
+}
+
+ul ul li:hover {
+	background:orange;
+}
