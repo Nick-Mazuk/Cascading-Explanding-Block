@@ -29,8 +29,8 @@ ul ul li {
 	margin-top:-50px;
 	z-index:1;
 	background:yellow;
-	-webkit-transition: margin-top 0.3s, height 3s; /* For Safari 3.1 to 6.0 */
-	transition: margin-top 0.3s, height 3s;
+	-webkit-transition: margin-top 0.3s; /* For Safari 3.1 to 6.0 */
+	transition: margin-top 0.3s;
 }
 
 ul li:hover li {
